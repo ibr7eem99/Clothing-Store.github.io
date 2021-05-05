@@ -1,0 +1,396 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+}
+
+h1,
+h2 {
+    color: #fff;
+    font-weight: lighter;
+}
+
+p {
+    font-size: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(78, 78, 78);
+    font-family: 'Roboto', sans-serif;
+}
+
+.subscribe {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    display: none;
+}
+
+.subscribe-content {
+    text-align: center;
+    padding: 32px;
+    animation: subscribe-box 0.5s;
+}
+
+@keyframes subscribe-box {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(20px);
+    }
+}
+
+.subscribe-content>h2 {
+    color: black;
+    margin: 10px 0;
+    letter-spacing: 5px;
+    font-size: 30px;
+}
+
+.subscribe-content>p {
+    margin: 15px 0;
+    font-size: 15px;
+}
+
+.subscribe-content .far {
+    float: right;
+    margin: 10px 20px;
+    font-size: 34px;
+    padding: 8px 16px;
+}
+
+.subscribe-content .far:hover {
+    cursor: pointer;
+    background-color: #CCC;
+}
+
+form input {
+    width: 100%;
+    height: 40px;
+    padding-left: 5px;
+    font-size: 15px;
+    border: 1px solid #CCC;
+}
+
+form button {
+    border: none;
+    outline: none;
+    width: 135px;
+    height: 45px;
+    background-color: #f44336;
+    color: white;
+    padding: 12px 24px;
+    font-size: 16px;
+    margin: 18px 0;
+}
+
+form button:hover {
+    cursor: pointer;
+    color: black;
+    background-color: #CCC;
+}
+
+.subscribe .subscribe-content {
+    background-color: white;
+    width: 900px;
+    height: 288px;
+    margin: 90px 218px;
+}
+
+.container {
+    width: 1220px;
+    margin: auto;
+    padding: 0 25px;
+}
+
+.container .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.container .left-content {
+    width: 225px;
+    height: 624px;
+    overflow: scroll;
+    overflow-x: hidden;
+    position: fixed;
+}
+
+.container .left-content h3 {
+    line-height: 60px;
+    padding: 8px 16px;
+}
+
+.container .left-content nav .product-type {
+    list-style-type: none;
+    padding: 64px 0;
+}
+
+.container .left-content nav .product-type li,
+.service li {
+    padding: 3px 16px;
+    height: 40px;
+}
+
+.container .left-content nav .product-type li:hover {
+    background-color: #CCC;
+    color: black;
+}
+
+.container .left-content nav .product-type li a {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.service li a {
+    font-size: 15px;
+    color: black;
+}
+
+.service li:hover {
+    background-color: #CCC;
+    color: black;
+}
+
+.container .left-content nav .product-type .sub-list {
+    list-style: none;
+    margin: 0 20px;
+    width: 170px;
+    font-size: 15px;
+}
+
+.container .right-content {
+    position: sticky;
+    left: 100%;
+    width: 945px;
+}
+
+.container .right-content .x {
+    padding: 20px;
+}
+
+header {
+    margin-bottom: 25px;
+}
+
+header p {
+    display: inline-block;
+    font-size: 24px;
+}
+
+header .icon {
+    display: inline-block;
+    position: sticky;
+    left: 100%;
+}
+
+header .icon .fas {
+    font-weight: bold;
+    margin-left: 16px;
+    font-size: 24px;
+}
+
+.header-text {
+    position: absolute;
+    top: 135px;
+    left: 50px;
+}
+
+.header-text h1 {
+    margin-bottom: 25px;
+    font-size: 64px;
+}
+
+.header-text h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+.header-text a {
+    background-color: black;
+    padding: 12px 24px;
+    color: #fff;
+    font-size: 18px;
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header-text a:hover {
+    background-color: #CCC;
+    color: #000;
+}
+
+#items {
+    margin: 16px 0;
+    filter: grayscale(75%);
+}
+
+#items .items-num {
+    margin-bottom: 16px;
+    color: #757575;
+}
+
+#items .row .col-4 {
+    width: 22.5%;
+}
+
+.product-details {
+    margin: 14px 0;
+}
+
+#items .row .col-4 span,
+#items .row .col-4 button {
+    position: absolute;
+    background-color: #000;
+    color: #fff;
+    font-size: 15px;
+    padding: 3px 8px;
+}
+
+#items .row .col-4 button {
+    border: none;
+    outline: none;
+    width: 125px;
+    height: 40px;
+    display: none;
+}
+
+.ripped-jeans {
+    top: 22%;
+    left: 29.5%;
+}
+
+.skinny-jeans {
+    top: 70%;
+    left: 55%;
+}
+
+#items .row .col-4 button:hover {
+    background-color: #CCC;
+    color: #000;
+    cursor: pointer;
+}
+
+#subscribe {
+    background-color: black;
+    padding: 32px 16px;
+}
+
+#subscribe h1 {
+    margin: 16px 0;
+    font-size: 36px;
+}
+
+#subscribe p {
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+#subscribe form input {
+    width: 100%;
+    height: 40px;
+    padding: 0 5px;
+    font-size: 15px;
+}
+
+#subscribe button {
+    width: 120px;
+    height: 40px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    font-weight: bolder;
+    background-color: #f44336;
+    color: #fff;
+    margin: 16px 0;
+}
+
+#subscribe button:hover {
+    background-color: #CCC;
+    color: black;
+    cursor: pointer;
+}
+
+#Contact {
+    background-color: #F1F1F1;
+    padding: 35px 16px;
+}
+
+.contact-content {
+    text-align: center;
+}
+
+.col-3 p {
+    margin: 16px 0;
+    font-size: 12px;
+    color: black;
+}
+
+.col-3 .about a {
+    color: black;
+    text-decoration: underline;
+}
+
+#Contact .row .col-3 {
+    width: 300px;
+    height: 322px;
+    margin-top: 50px;
+}
+
+#Contact .row .col-3 form input {
+    width: 100%;
+    height: 35px;
+    margin: 8px 0;
+    border: 1px solid #CCC;
+    padding-left: 8px;
+}
+
+#Contact .row .col-3 form button {
+    width: 100%;
+    height: 35px;
+    border: none;
+    outline: none;
+    background-color: black;
+    color: white;
+    font-size: 12px;
+}
+
+#Contact .row .col-3 form button:hover {
+    cursor: pointer;
+    background-color: #CCC;
+    color: black;
+}
+
+#Contact h4 {
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.social-media {
+    margin-top: 35px;
+    font-size: 18px;
+}
+
+.social-media i:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+footer {
+    background-color: black;
+    width: 100%;
+    height: 75px;
+}

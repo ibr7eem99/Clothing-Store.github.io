@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Jeans | website Design</title>
+    <link rel="stylesheet" href="css/Style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="left-content">
+
+            <h3><b>LOGO</b></h3>
+
+            <nav>
+                <ul class="product-type">
+                    <li><a onclick="select(this)" href="#">Shirts</a></li>
+                    <li><a onclick="select(this)" href="#">Dresses</a></li>
+                    <li><a onclick="select(this)" href="#">Jeans <i class="fas fa-caret-down"></i></a></li>
+                    <ul class="sub-list">
+                        <li><a href="#">Skinny</a></li>
+                        <li><a href="#">Relaxed</a></li>
+                        <li><a href="#">BootCut</a></li>
+                        <li><a href="#">Straight</a></li>
+                    </ul>
+                    <li><a onclick="select(this)" href="#">Jackets</a></li>
+                    <li><a onclick="select(this)" href="#">GymWear</a></li>
+                    <li><a onclick="select(this)" href="#">Blazer</a></li>
+                    <li><a onclick="select(this)" href="#">Shoes</a></li>
+                </ul>
+
+                <ul class="service">
+                    <li><a href="#Contact">Contact</a></li>
+                    <li onclick="document.querySelector('.subscribe').style.display = 'block';"><a>NewSletter</a></li>
+                    <li><a href="#subscribe">Subscribe</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="subscribe">
+            <div class="subscribe-content">
+                <i onclick="document.querySelector('.subscribe').style.display = 'none';" class="far fa-times"></i>
+                <h2>NEWSLETTER</h2>
+                <p>Join our mailing list to receive updates on new arrivals and special offers.</p>
+                <form>
+                    <input type="text" placeholder="Enter e-mail">
+                    <button onclick="document.querySelector('.subscribe').style.display = 'none';">Subscribe</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="right-content">
+            <div class="x">
+                <header>
+                    <p>Jeans</p>
+
+                    <div class="icon">
+                        <i class="fas fa-shopping-cart "></i>
+                        <i class="fas fa-search "></i>
+                    </div>
+                </header>
+
+                <div class="header">
+                    <div class="header-text">
+                        <h1>New arrivals</h1>
+                        <h2>COLLECTION 2016</h2>
+                        <a type="button" href="#items">SHOP NOW</a>
+                    </div>
+
+                    <img src="images/jeans.jpg " width="100%">
+
+                </div>
+
+                <div id="items">
+
+                    <p class="items-num">8 items</p>
+
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="images/jeans1.jpg" width="100%">
+
+                            <div class="product-details">
+                                <p>Ripped Skinny Jeans</p>
+                                <p><b>$24.99</b></p>
+                            </div>
+                        </div>
+
+                        <div onmouseout="disabledHover(this)" onmouseover="enableHover(this);" class="col-4">
+                            <span>New</span>
+
+                            <button id="btn" class="ripped-jeans">Buy now <i class="fas fa-shopping-cart"></i></button>
+
+                            <img src="images/jeans2.jpg" width="100%">
+
+                            <div class="product-details">
+                                <p>Mega Ripped Jeans</p>
+                                <p><b>$19.99</b></p>
+                            </div>
+                        </div>
+
+                        <div class="col-4">
+                            <img src="images/jeans3.jpg" width="100%">
+
+                            <div class="product-details">
+                                <p>Washed Skinny Jeans</p>
+                                <p><b>$20.50</b></p>
+                            </div>
+                        </div>
+
+                        <div class="col-4">
+                            <img src="images/jeans4.jpg" width="100%">
+
+                            <div class="product-details">
+                                <p>Vintage Skinny Jeans</p>
+                                <p><b>$14.99</b></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="images/jeans2.jpg" width="100%">
+
+                            <div class="product-details">
+                                <p>Mega Ripped Jeans</p>
+                                <p><b>$19.99</b></p>
+                            </div>
+                        </div>
+
+                        <div class="col-4">
+                            <img src="images/jeans3.jpg" width="100%">
+
+                            <div class="product-details">
+                                <p>Washed Skinny Jeans</p>
+                                <p><b>$20.50</b></p>
+                            </div>
+                        </div>
+
+                        <div onmouseout="disabledHover(this)" onmouseover="enableHover(this);" class="col-4">
+                            <span>Sale</span>
+
+                            <button id="btn" class="skinny-jeans">Buy now <i class="fas fa-shopping-cart"></i></button>
+
+                            <img src="images/jeans4.jpg" width="100%">
+
+                            <div class="product-details">
+                                <p>Vintage Skinny Jeans</p>
+                                <p><b>$14.99</b></p>
+                            </div>
+                        </div>
+
+                        <div class="col-4">
+                            <img src="images/jeans1.jpg" width="100%">
+
+                            <div class="product-details">
+                                <p>Ripped Skinny Jeans</p>
+                                <p><b>$24.99</b></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <section id="subscribe">
+                <h1>Subscribe</h1>
+                <p>To get special offers and VIP treatment:</p>
+
+                <form>
+                    <input type="email" placeholder="Enter e-mail">
+                </form>
+
+                <button type="button">Subscribe</button>
+            </section>
+
+            <section id="Contact">
+
+                <div class="row">
+                    <div class="col-3">
+                        <div class="contact-content">
+                            <h4>Contact</h4>
+                            <p>Questions? Go ahead.</p>
+                        </div>
+
+                        <form>
+                            <input type="text" placeholder="Name">
+                            <input type="email" placeholder="Email">
+                            <input type="text" placeholder="Subject">
+                            <input type="text" placeholder="Message">
+                            <button type="button">Send</button>
+                        </form>
+
+                    </div>
+
+                    <div class="col-3">
+                        <div class="contact-content">
+                            <h4>About</h4>
+
+                            <div class="about">
+                                <p><a href="#">About us</a></p>
+                                <p><a href="#">We're hiring</a></p>
+                                <p><a href="#">Support</a></p>
+                                <p><a href="#">Find store</a></p>
+                                <p><a href="#">Shipment</a></p>
+                                <p><a href="#">Payment</a></p>
+                                <p><a href="#">Gift card</a></p>
+                                <p><a href="#">Return</a></p>
+                                <p><a href="#">Help</a></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-3">
+                        <h4>Store</h4>
+                        <p><i class="fas fa-map-marker-alt"></i> Company Name</p>
+                        <p><i class="fas fa-phone-alt"></i> 0044123123</p>
+                        <p><i class="fas fa-envelope"></i> ex@mail.com</p>
+                        <h4>We accept</h4>
+                        <p><i class="fab fa-cc-amex"></i> Amex</p>
+                        <p><i class="far fa-credit-card"></i> Credit Card</p>
+
+                        <div class="social-media">
+                            <i class="fab fa-facebook-square"></i>
+                            <i class="fab fa-instagram"></i>
+                            <i class="fab fa-snapchat"></i>
+                            <i class="fab fa-pinterest-p"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-linkedin-in"></i>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <footer></footer>
+        </div>
+
+        <script>
+            function enableHover(element) {
+                element.children[1].style.display = "block";
+            }
+
+            function disabledHover(element) {
+                element.children[1].style.display = "none";
+            }
+
+            function select(element) {
+                var type = ["Shirts", "Dresses", "Jeans", "Jackets", "GymWear", "Blazer", "Shoes"];
+                var product = document.querySelector(".product-type");
+                var length = product.children.length;
+
+                for (var i = 0; i < type.length; i++) {
+                    if (element.innerHTML == type[i]) {
+                        element.innerHTML += '<i class="fas fa-caret-down"></i>';
+                        var x = i;
+                    }
+                }
+
+            }
+
+            select();
+        </script>
+</body>
+
+</html>
